@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.africinnovate.cgpa_calculator.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.africinnovate.cgpa_calculator.ui.dashboard.DashboardFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_gpa"
+        android:name="com.africinnovate.cgpa_calculator.ui.notifications.NotificationsFragment"
+        android:label="@string/title_gpa"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/cgpa"
+        android:name="com.africinnovate.cgpa_calculator.Cgpa"
+        android:label="@string/title_cgpa"
+        tools:layout="@layout/fragment_cgpa" />
+
+    <fragment
+        android:id="@+id/finalResult"
+        android:name="com.africinnovate.cgpa_calculator.FinalResult"
+        android:label="@string/title_final_result"
+        tools:layout="@layout/fragment_final_result" />
+</navigation>

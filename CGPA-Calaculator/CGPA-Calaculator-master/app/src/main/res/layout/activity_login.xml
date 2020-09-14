@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/backArrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/back_arrow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="30dp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#000"
+        app:layout_constraintLeft_toRightOf="@+id/backArrow"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp" />
+
+
+    <ImageView
+        android:id="@+id/login_banner"
+        android:layout_width="240dp"
+        android:layout_height="167dp"
+        app:srcCompat="@drawable/signup_logo"
+        android:layout_marginTop="49dp"
+        app:layout_constraintTop_toTopOf="@+id/backArrow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_banner"/>
+
+    <EditText
+        android:id="@+id/email_edit_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/email_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/email_edit_box"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    
+    <EditText
+        android:id="@+id/password_edit_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/password_label"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="61dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/login_button"
+        android:text="Login"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_edit_box" />
+
+
+    <TextView
+        android:id="@+id/centerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_button"/>
+
+
+    <Button
+        android:id="@+id/google_signIn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/google_logo"
+        app:layout_constraintTop_toBottomOf="@id/centerText"
+        app:layout_constraintRight_toLeftOf="@id/centerText"
+        android:layout_marginStart="80dp" />
+
+    <Button
+        android:id="@+id/facebook_signIn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/face_book_logo"
+        app:layout_constraintTop_toBottomOf="@id/centerText"
+        app:layout_constraintLeft_toRightOf="@id/centerText"
+        android:layout_marginEnd="80dp" />
+
+
+    <TextView
+        android:id="@+id/dont_have_an_accont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/google_signIn"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#256EC8"
+        android:text="  Signup"
+        android:textSize="18sp"
+        android:onClick="signUp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/google_signIn"
+        app:layout_constraintLeft_toRightOf="@id/dont_have_an_accont" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

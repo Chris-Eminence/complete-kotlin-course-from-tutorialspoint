@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/centerText"
+            app:layout_constraintGuide_percent="0.50121653" />
+
+        <TextView
+            android:id="@+id/first_semester_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="First Semester"
+            android:textColor="#5E49AE"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tgp_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="TGP"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first_semester_textView" />
+
+        <TextView
+            android:id="@+id/tgp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/first_semester_textView" />
+
+        <TextView
+            android:id="@+id/tcu_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="TCU"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tgp_TextView" />
+
+        <TextView
+            android:id="@+id/tcu_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tgp_value" />
+
+        <TextView
+            android:id="@+id/gpa_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="GPA"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tcu_TextView" />
+
+        <TextView
+            android:id="@+id/gpa_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tcu_value" />
+
+
+        <!--                Second semester block              -->
+
+
+        <TextView
+            android:id="@+id/second_semester_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="First Semester"
+            android:textColor="#5E49AE"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tgp_TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="TGP"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/second_semester_textView"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:id="@+id/tgp_value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/second_semester_textView" />
+
+        <TextView
+            android:id="@+id/tcu_TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="TCU"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tgp_TextView2" />
+
+        <TextView
+            android:id="@+id/tcu_value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tgp_value2" />
+
+        <TextView
+            android:id="@+id/gpa_TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="GPA"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tcu_TextView2" />
+
+        <TextView
+            android:id="@+id/gpa_value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tcu_value2" />
+
+        <TextView
+            android:id="@+id/centerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   "
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gpa_TextView2" />
+
+        <TextView
+            android:id="@+id/cgpa_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CGPA"
+            android:textColor="#FCA32C"
+            android:textSize="24sp"
+            app:layout_constraintRight_toLeftOf="@id/centerText"
+            app:layout_constraintTop_toBottomOf="@id/centerText" />
+
+        <TextView
+            android:id="@+id/cgpa_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.06"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toRightOf="@id/centerText"
+            app:layout_constraintTop_toBottomOf="@id/centerText" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1db995"
+            app:layout_constraintTop_toBottomOf="@id/cgpa_textView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline">
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/undraw_one"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text=" "
+            android:background="#858585"
+            android:layout_marginVertical="22dp"
+            app:layout_constraintBottom_toTopOf="@id/cgpa_textView"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
