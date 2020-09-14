@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
-        android:id="@+id/cgpa"
+        android:id="@+id/navigation_cgpa"
         android:name="com.africinnovate.cgpa_calculator.Cgpa"
         android:label="@string/title_cgpa"
         tools:layout="@layout/fragment_cgpa" />
